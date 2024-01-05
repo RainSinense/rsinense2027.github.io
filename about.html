@@ -4,173 +4,177 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>SheCoPi Hub</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz@6..12&display=swap" rel="stylesheet">
+    <title>SheCoPi</title>
 </head>
 <body class="body-about">
-    <div class="header">
-        <div class="navbar">
+    <script>
+        function showSidebar(){
+        const sidebar = document.querySelector('.sidebar')
+        sidebar.style.display = 'flex'
+        }
+        function hideSidebar(){
+        const sidebar = document.querySelector('.sidebar')
+        sidebar.style.display = 'none'
+        }
+      </script>
+      <div class="header">
+        <div>
           <img src="img/logo.svg" alt="Logo" class="logo" />
           <div class="schoolname">
             <h1>SHECOPI</h1>
             <p>HIGHSCHOOL</p>
           </div>
-          <ul>
-            <li><a href="Index.html">Home</a></li>
+          <ul class="sidebar">
+            <li onclick=hideSidebar()><span class="material-symbols-outlined">
+              close
+              </span></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About Us</a></li>
             <li><a href="academics.html">Academics</a></li>
             <li><a href="extra-curricular.html">Extra-Curricular</a></li>
             <li><a href="contact.html">Contact Us</a></li>
           </ul>
+          <ul class="navbar">
+            <li class="hide-on-mobile"><a href="index.html">Home</a></li>
+            <li class="hide-on-mobile"><a href="about.html">About Us</a></li>
+            <li class="hide-on-mobile"><a href="academics.html">Academics</a></li>
+            <li class="hide-on-mobile"><a href="extra-curricular.html">Extra-Curricular</a></li>
+            <li class="hide-on-mobile"><a href="contact.html">Contact Us</a></li>
+            <li onclick=showSidebar() class="menu-button"><span class="material-symbols-outlined">
+              menu
+              </span></li>
+          </ul>
         </div>
-    </div>
+      </div>
     <div class="history">
-        <h2 class="about-section" id="history-title"><span>OUR</span> <br>HISTORY</h2>
+        <h2 class="about-section" id="history-title"><br>HISTORY</h2>
         <div class="timeline">
-            <div class="box up-box">
-                <h2>1st Century CE</h2>
+            <div class="box">
                 <div class="text-box">
+                    <h2>1st Century CE</h2>
                     <p>God gave the three of our founding wolves 
                         high-intelligence and immortality</p>
-                    <span class="arrow up-arrow"></span>
+                    <span class="arrow"></span>
                 </div>
             </div>
     
-            <div class="box down-box">
-                <h2>1500</h2>
+            <div class="box">
                 <div class="text-box">
+                    <h2>1500</h2>
                     <p>The Founding Wolves fought against the abuse 
                         and suppression done by the Roman Catholic Church</p>
-                    <span class="arrow down-arrow"></span>
+                    <span class="arrow"></span>
                 </div>
             </div>
     
-            <div class="box up-box">
-                <h2>1760</h2>
+            <div class="box">
                 <div class="text-box">
+                    <h2>1760</h2>
                     <p>The first steampunk-robot-teacher was 
                         invented using magical rocks</p>
-                    <span class="arrow up-arrow"></span>
+                    <span class="arrow"></span>
                 </div>
             </div>
     
-            <div class="box down-box">
-                <h2>1946</h2>
+            <div class="box">
                 <div class="text-box">
+                    <h2>1946</h2>
                     <p>Thanks to the nations that the Wolves 
                         assisted during World War II, Shecopi 
                         was built atop the skies. Also dinosaurs are back</p>
-                    <span class="arrow down-arrow"></span>
+                    <span class="arrow"></span>
                 </div>
             </div>
     
-            <div class="box up-box">
-                <h2>2014</h2>
+            <div class="box">
                 <div class="text-box">
+                    <h2>2014</h2>
                     <p>The 3 Founding Wolves are reincarnated 
                         as dogs who live and enjoy their golden years in SheCoPi</p>
-                    <span class="arrow up-arrow"></span>
+                    <span class="arrow"></span>
                 </div>
             </div>
         </div>
     </div>
 
-    <h2 class="about-section"><span>OUR</span> <br>ADMINS</h2>
+    <h2 class="about-section">ADMINS</h2>
     
     <div class="people">
         <div class="card">
             <div class="content">
-                <img src="img/teacher1.jpg"/>
-                <h2>Mathematics<br><span>Kento Nanami</span></h2>
+                <img src="img/admin1.PNG" alt="Sheeba"/>
+                <h2>Sheeba D. Jireh<br><span>Principal</span></h2>
             </div>
         </div>
         <div class="card">
             <div class="content">
-                <img src="img/teacher1.jpg"/>
-                <h2>Maki Zenin<br><span>Teacher</span></h2>
+                <img src="img/admin2.PNG" alt="Coal"/>
+                <h2>Coal M. Agaton<br><span>Assistant Principal</span></h2>
             </div>
         </div>
         <div class="card">
             <div class="content">
-                <img src="img/teacher1.jpg"/>
-                <h2>Gojo Satoru<br><span>Teacher</span></h2>
+                <img src="img/admin3.PNG" alt="Fifi"/>
+                <h2>Fifi J. Sinense<br><span>Dean of students</span></h2>
             </div>
         </div>
     </div>
 
-    <h2 class="about-section"><span>OUR</span> <br>TEACHERS</h2>
+    <h2 class="about-section">TEACHERS</h2>
     <div class="people">
         <div class="card teacher">
             <div class="content">
-                <img src="img/teacher1.jpg"/>
-                <h2>Maki<br><span>Teacher</span></h2>
+                <img src="img/teacher1.jpg" alt="Nanami"/>
+                <h2>Kento Nanami<br><span>Mathematics</span></h2>
             </div>
         </div>
         <div class="card teacher">
             <div class="content">
-                <img src="img/teacher1.jpg"/>
-                <h2>Maki<br><span>Teacher</span></h2>
+                <img src="img/teacher2.png" alt="Maki"/>
+                <h2>Maki Zenin<br><span>P.E.</span></h2>
             </div>
         </div>
         <div class="card teacher">
             <div class="content">
-                <img src="img/teacher1.jpg"/>
-                <h2>Maki<br><span>Teacher</span></h2>
+                <img src="img/teacher3.PNG" alt="Ieiri"/>
+                <h2>Shoko Ieiri<br><span>Biology</span></h2>
             </div>
         </div>
         <div class="card teacher">
             <div class="content">
-                <img src="img/teacher1.jpg"/>
-                <h2>Maki<br><span>Teacher</span></h2>
+                <img src="img/teacher4.png" alt="Satoru"/>
+                <h2>Gojo Satoru<br><span>Chemistry</span></h2>
             </div>
         </div>
         <div class="card teacher">
             <div class="content">
-                <img src="img/teacher1.jpg"/>
-                <h2>Maki<br><span>Teacher</span></h2>
+                <img src="img/teacher5.png" alt="Todo"/>
+                <h2>Aoi Todo<br><span>Statistics</span></h2>
             </div>
         </div>
         <div class="card teacher">
             <div class="content">
-                <img src="img/teacher1.jpg"/>
-                <h2>Maki<br><span>Teacher</span></h2>
+                <img src="img/teacher7.png" alt="Muta"/>
+                <h2>Koichi Muta<br><span>CompSci</span></h2>
             </div>
         </div>
         <div class="card teacher">
             <div class="content">
-                <img src="img/teacher1.jpg"/>
-                <h2>Maki<br><span>Teacher</span></h2>
+                <img src="img/teacher8.png" alt="Choso"/>
+                <h2>Choso<br><span>ValEd</span></h2>
             </div>
         </div>
         <div class="card teacher">
             <div class="content">
-                <img src="img/teacher1.jpg"/>
-                <h2>Maki<br><span>Teacher</span></h2>
+                <img src="img/teacher9.png" alt="Sukuna"/>
+                <h2>Ryomen Sukuna<br><span>SocSci</span></h2>
             </div>
         </div>
-        <div class="card teacher">
-            <div class="content">
-                <img src="img/teacher1.jpg"/>
-                <h2>Maki<br><span>Teacher</span></h2>
-            </div>
-        </div>
-        <div class="card teacher">
-            <div class="content">
-                <img src="img/teacher1.jpg"/>
-                <h2>Maki<br><span>Teacher</span></h2>
-            </div>
-        </div>
-        <div class="card teacher">
-            <div class="content">
-                <img src="img/teacher1.jpg"/>
-                <h2>Maki<br><span>Teacher</span></h2>
-            </div>
-        </div>
-        <div class="card teacher">
-            <div class="content">
-                <img src="img/teacher1.jpg"/>
-                <h2>Maki<br><span>Teacher</span></h2>
-            </div>
-        </div>
+        
 
     </div>
 </body>
