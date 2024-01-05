@@ -4,56 +4,85 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>SheCoPi Hub</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz@6..12&display=swap" rel="stylesheet">
+    <title>SheCoPi</title>
 </head>
-<body class="body-contact">
-    <div class="header">
-        <div class="navbar">
-          <img src="img/logo.svg" alt="Logo" class="logo" />
+<body>
+    <script>
+        function showSidebar(){
+        const sidebar = document.querySelector('.sidebar')
+        sidebar.style.display = 'flex'
+        }
+        function hideSidebar(){
+        const sidebar = document.querySelector('.sidebar')
+        sidebar.style.display = 'none'
+        }
+      </script>
+      <div class="header">
+        <div>
+          <img src="img/logo.svg" alt="Logo" class="logo"/>
           <div class="schoolname">
             <h1>SHECOPI</h1>
             <p>HIGHSCHOOL</p>
           </div>
-          <ul>
-            <li><a href="Index.html">Home</a></li>
+          <ul class="sidebar">
+            <li onclick=hideSidebar()><span class="material-symbols-outlined">
+              close
+              </span></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About Us</a></li>
             <li><a href="academics.html">Academics</a></li>
             <li><a href="extra-curricular.html">Extra-Curricular</a></li>
             <li><a href="contact.html">Contact Us</a></li>
           </ul>
+          <ul class="navbar">
+            <li class="hide-on-mobile"><a href="index.html">Home</a></li>
+            <li class="hide-on-mobile"><a href="about.html">About Us</a></li>
+            <li class="hide-on-mobile"><a href="academics.html">Academics</a></li>
+            <li class="hide-on-mobile"><a href="extra-curricular.html">Extra-Curricular</a></li>
+            <li class="hide-on-mobile"><a href="contact.html">Contact Us</a></li>
+            <li onclick=showSidebar() class="menu-button"><span class="material-symbols-outlined">
+              menu
+              </span></li>
+          </ul>
+        </div>
+      </div>
+    <div class="body-contact">
+        <div class="container-contacts">
+            <div class="contacts">
+                <div class="details">
+                    <i class="fa-sharp fa-solid fa-map-location"></i>
+                    <p>ADDRESS</p>
+                    <p>Pampanga, Zone,</p>
+                    <p>Clark Freeport, Lily Hill</p>
+                </div>
+                <div class="details">
+                    <i class="fa-solid fa-phone"></i>
+                    <p>PHONE<br>
+                    +0916 899 3741<br>
+                    +0963 336 786</p>
+                </div>
+                <div class="details">
+                    <i class="fa-solid fa-envelope"></i>
+                    <p>EMAIL</p>
+                    <p>Shecopi@gmail.com</p>
+                    <p>infoShecopi@gmail.com</p>
+                </div>
+            </div>
+            <div class="contact-form">
+                <h2>SEND US A MESSAGE</h2>
+                <form action="#" class="comment-form">
+                        <input type="text" class="input-box" placeholder="Enter your name">
+                        <input type="text" class="input-box" placeholder="Enter your email">
+                        <textarea class="input-box message-box"></textarea>
+                        <button class="input-box send-button">SEND</button>
+                </form>
+            </div>
         </div>
     </div>
-    <div class="container-contacts">
-        <div class="contacts">
-            <div class="address details">
-                <i class="fa-sharp fa-solid fa-map-location"></i>
-                <p>ADDRESS</p>
-                <p>puerto rico</p>
-                <p>RAAAAAAAAAAAAAG</p>
-            </div>
-            <div class="phone details">
-                <i class="fa-solid fa-phone"></i>
-                <p>PHONE</p>
-                <p>0916 899 374</p>
-                <p>RAAAAAAAAAAAAAG</p>
-            </div>
-            <div class="email details">
-                <i class="fa-solid fa-envelope"></i>
-                <p>EMAIL</p>
-                <p>Shecopi@gmail.com</p>
-                <p>RAAAAAAAAAAAAAG</p>
-            </div>
-        </div>
-        <div class="contact-form">
-            <h2>Send us a Message</h2>
-            <form action="#" class="comment-form">
-                    <input type="text" class="input-box" placeholder="Enter your name">
-                    <input type="text" class="input-box" placeholder="Enter your email">
-                    <textarea class="input-box message-box"></textarea>
-                    <button class="send-button">SEND</button>
-            </form>
-        </div>
-    </div>
-    
 </body>
 </html>
