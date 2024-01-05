@@ -4,6 +4,76 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>SheCoPi Hub</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>SheCoPi</title>
+    <style>
+      body{
+        overflow: hidden;
+      }
+    </style>
 </head>
-<body></body>
+
+<body class="body-bio-lab">
+    <script>
+        function showSidebar(){
+        const sidebar = document.querySelector('.sidebar')
+        sidebar.style.display = 'flex'
+        }
+        function hideSidebar(){
+        const sidebar = document.querySelector('.sidebar')
+        sidebar.style.display = 'none'
+        }
+      </script>
+      <div class="header">
+        <div>
+          <img src="img/logo.svg" alt="Logo" class="logo" />
+          <div class="schoolname">
+            <h1>SHECOPI</h1>
+            <p>HIGHSCHOOL</p>
+          </div>
+          <ul class="sidebar">
+            <li onclick=hideSidebar()><span class="material-symbols-outlined">
+              close
+              </span></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="academics.html">Academics</a></li>
+            <li><a href="extra-curricular.html">Extra-Curricular</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+          <ul class="navbar">
+            <li class="hide-on-mobile"><a href="index.html">Home</a></li>
+            <li class="hide-on-mobile"><a href="about.html">About Us</a></li>
+            <li class="hide-on-mobile"><a href="academics.html">Academics</a></li>
+            <li class="hide-on-mobile"><a href="extra-curricular.html">Extra-Curricular</a></li>
+            <li class="hide-on-mobile"><a href="contact.html">Contact Us</a></li>
+            <li onclick=showSidebar() class="menu-button"><span class="material-symbols-outlined">
+              menu
+              </span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="bio-header">
+        <div class="bio-header-main">
+          <h1>Biology</h1>
+          <h3>Labratory</h3>
+        </div>
+        <div class="bio-header-side">
+          <p>This laboratory page aims to better understand how humans absorb nutrients with visual help from this page's documentary of our simulation of the digestive system. Understanding how the digestive system works would help each individual figure out what diet is better and reduce the risk of making more issues.
+            Such issues can be Diarrhea, Gastritis, Constipation and etc.<br>
+          </div>
+      </div>
+    <div class="bio-bottom">
+      <div class="bio-lab-button">
+        <h1>Digestive System Simulation Lab</h1>
+        <span><a href="bio-lab.html"></a></span>
+      </div>
+      <div class="bio-card">
+        <div class="bio-card-content">
+          <img src="img/teacher3.PNG" alt="Ieri">
+          <h2>Shoko Ieiri<br><span>Bio Teacher</span></h2>
+        </div>
+      </div>
+    </div>
+</body>
+</html>
